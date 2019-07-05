@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.scss';
-import Navbar from './components/navbar/navbar';
+import Layout from './hoc/layout/layout';
 
 function App() {
   return (
-    <div class="container">
-      <Navbar/> 
-    </div>
+    <>
+      <Layout>
+        <main>content</main>
+        </Layout>
+    </>
   );
 }
 
