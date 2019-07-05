@@ -30,6 +30,7 @@ const Navbar = props => {
               </a>
             </li>
             <li class="nav-item active">
+
               <a class="nav-link" href="#">
                 Decor
               </a>
@@ -49,7 +50,6 @@ const Navbar = props => {
                 Kitchen
               </a>
             </li>
-            
           </ul>
           <div class="d-flex" id="navbar-icon">
             <i class="fa fa-search" />
