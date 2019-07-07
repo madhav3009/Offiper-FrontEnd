@@ -19,46 +19,56 @@ const Navbar = props => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
               <a class="nav-link" href="#">
                 Stationary
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
               <a class="nav-link" href="#">
                 Hardware
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
+
               <a class="nav-link" href="#">
                 Decor
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
               <a class="nav-link" href="#">
                 Events
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
               <a class="nav-link" href="#">
                 Cleansing
               </a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active pt-2 pb-2">
               <a class="nav-link" href="#">
                 Kitchen
               </a>
             </li>
-            
           </ul>
-          <div class="d-flex" id="navbar-icon">
-            <i class="fa fa-search" />
-            <i class="fa fa-shopping-bag " />
-            <i class="fa fa-shopping-cart" />
+          <div class="row" id="navbar-icon">
+            <div className="col-xl pt-2 pb-2">
+              <i class="fa fa-search" />
+            </div>
+            <div className="col-xl pt-2 pb-2">
+              <i class="fa fa-shopping-bag " />
+            </div>
+            <div className="col-xl pt-2 pb-2">
+              <i class="fa fa-shopping-cart" />
+            </div>
           </div>
-          <div className="d-flex" id="navbar-sign-button">
-            <div >SignIn</div>&nbsp;
-            <div >SignUp</div>
+          <div className="row" id="navbar-sign-button">
+            <div className="col-xl pr-4 pt-2 pb-2 ">
+              <a href="">SignIn</a>
+            </div>
+            <div className="col-xl pr-4 pt-2 pb-2">
+              <a href="">SignUp</a>
+            </div>
           </div>
         </div>
       </nav>
