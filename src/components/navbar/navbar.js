@@ -30,6 +30,7 @@ const Navbar = props => {
               </a>
             </li>
             <li class="nav-item active pt-2 pb-2">
+
               <a class="nav-link" href="#">
                 Decor
               </a>
