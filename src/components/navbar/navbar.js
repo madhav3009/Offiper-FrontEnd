@@ -1,13 +1,14 @@
 import React from "react";
 import "./navbar.scss";
+import { NavLink } from "react-router-dom";
 
 const Navbar = props => {
   return (
     <header>
       <nav class="navbar navbar-expand-xl sticky-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <NavLink to="/" exact className="navbar-brand">
           Offiper
-        </a>
+        </NavLink>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,35 +21,34 @@ const Navbar = props => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active pt-2 pb-2">
-              <a class="nav-link" href="#">
+              <NavLink to="/stationary" exact className="nav-link">
                 Stationary
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <a class="nav-link" href="#">
+              <NavLink to="/hardware" exact className="nav-link">
                 Hardware
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-
-              <a class="nav-link" href="#">
+              <NavLink to="/decor" exact className="nav-link">
                 Decor
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <a class="nav-link" href="#">
+              <NavLink to="/events" exact className="nav-link">
                 Events
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <a class="nav-link" href="#">
+              <NavLink to="/cleansing" exact className="nav-link">
                 Cleansing
-              </a>
+              </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <a class="nav-link" href="#">
+              <NavLink to="/kitchen" exact className="nav-link">
                 Kitchen
-              </a>
+              </NavLink>
             </li>
           </ul>
           <div class="row" id="navbar-icon">
@@ -56,10 +56,14 @@ const Navbar = props => {
               <i class="fa fa-search" />
             </div>
             <div className="col-xl pt-2 pb-2">
-              <i class="fa fa-shopping-bag " />
+              <NavLink to="/buckets" exact>
+                <i class="fa fa-shopping-bag " />
+              </NavLink>
             </div>
             <div className="col-xl pt-2 pb-2">
-              <i class="fa fa-shopping-cart" />
+              <NavLink to="/cart" exact>
+                <i class="fa fa-shopping-cart" />
+              </NavLink>
             </div>
           </div>
           <div className="row" id="navbar-sign-button">
