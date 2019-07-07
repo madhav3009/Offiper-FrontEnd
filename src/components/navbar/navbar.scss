@@ -4,26 +4,61 @@
 }
 .navbar-brand {
   font-size: 2em;
-  margin-right: 15%;
 }
-.navbar .bg-dark {
+.navbar,
+.bg-dark {
   background-color: black !important;
 }
 
 #navbar-icon {
+  text-align: center;
+  margin-right: 40px;
   .fa {
     color: white;
-    font-size: 1.5em;
-    margin-right: 20px;
+    font-size:1.2em;
   }
 }
+
 #navbar-sign-button {
-  color: white;
-  max-width: 100%;
-  width: auto;
+  text-align: center;
+  a {
+    color: white;
+  }
+  .col-xl {
+    padding-left: 0px !important;
+  }
 }
+
 .navbar-nav {
+  .nav-link {
+    text-align: center;
+  }
+  li:first-child {
+    padding-left: 200px;
+  }
   li {
-    padding-left: 5% !important;
+    padding-right: 40px !important;
+  }
+}
+
+// media queries
+
+@media only screen and (max-width:1200px){
+.navbar-nav{
+    li:first-child {
+    padding-left: 0px;
+  }
+  li {
+    padding-right: 8px !important;
+    }
+  }
+  #navbar-icon{
+  margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:576px){
+  .navbar-brand {
+    margin-left: 45%;
   }
 }
