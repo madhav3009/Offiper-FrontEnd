@@ -29,49 +29,16 @@
   font-family: sans-serif, Lato;
   margin-right: 20px;
   margin-left: 20px;
+  text-transform: capitalize;
 }
 
 #SecondContainer {
   color: black;
   background-color: white;
   padding: 10px;
-  background-color: #ffd154;
+  background-color: whitesmoke;
 }
 
-.productTitle {
-  display: inline;
-  padding: 3%;
-}
-#price {
-  padding-left: 55%;
-}
-.item-details {
-  h4 {
-    margin-left: 2%;
-    margin-top: 5%;
-  }
-}
-.Items {
-  float: left;
-  width: 300px;
-  height: 300px;
-  background-color: white;
-  margin-right: 1%;
-}
-
-.Items img {
-  width: 300px;
-  height: 200px;
-  align-items: center;
-}
-.Qty {
-  font-size: 20px;
-  width: 100px;
-  height: 30px;
-  background-color: none;
-  border: 2px solid black;
-  border-radius: 10px;
-}
 ::-webkit-scrollbar {
   height: 4px;
   width: 5px;

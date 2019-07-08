@@ -11,6 +11,7 @@ import Kitchen from "./pages/kitchen/kitchen";
 import Cleansing from "./pages/cleansing/cleansing";
 import Cart from "./pages/cart/cart";
 import Buckets from "./pages/buckets/buckets";
+import Product from './pages/product/product';
 
 function App() {
   return (
@@ -20,12 +21,14 @@ function App() {
           <Route path="/stationary" exact component={Stationary} />
           <Route path="/hardware" exact component={Hardware} />
           <Route path="/decor" exact component={Decor} />
-          <Route path="/Events" exact component={Events} />
-          <Route path="/Kitchen" exact component={Kitchen} />
-          <Route path="/Cleansing" exact component={Cleansing} />
-          <Route path="/Cart" exact component={Cart} />
-          <Route path="/Buckets" exact component={Buckets} />
+          <Route path="/events" exact component={Events} />
+          <Route path="/kitchen" exact component={Kitchen} />
+          <Route path="/cleansing" exact component={Cleansing} />
+          <Route path="/cart" exact component={Cart} />
+          <Route path="/buckets" exact component={Buckets} />
           <Route path="/" exact component={Home} />
+
+          <Route path="/:type/:productTitle" exact component={Product}/>
         </Switch>
       </Layout>
     </>
