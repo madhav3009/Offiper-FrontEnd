@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = props => {
   return (
     <header>
-      <nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark" >
+      <nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark">
         <NavLink to="/" exact className="navbar-brand">
           Offiper
         </NavLink>
