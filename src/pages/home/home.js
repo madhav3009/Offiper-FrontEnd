@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import Itembanner from '../../components/itembanner/itemBanner';
 
 export default class Home extends Component {
- render() {
-  return (
-   <div>
-    Home Page
-   </div>
-  )
- }
+  render() {
+    return <div>
+      <Itembanner/>
+    </div>;
+  }
 }

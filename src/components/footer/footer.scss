@@ -1,0 +1,36 @@
+footer{
+  margin-top:80px;
+}
+.row {
+  height: auto;
+  background-color: black;
+  bottom: 0px;
+  color: white;
+  ul {
+    list-style-type: none;
+  }
+}
+
+.col-sm-4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#Logo {
+  margin-top: -10%;
+}
+
+.col-sm-12 {
+  p {
+    text-align: center;
+    border-top: 2px solid white;
+    padding-top: 2%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .footerC {
+    ul {
+      padding-top: 40%;
+    }
+  }
+}
