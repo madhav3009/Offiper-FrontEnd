@@ -21,32 +21,32 @@ const Navbar = props => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/stationary" exact className="nav-link">
+              <NavLink to="/stationary" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Stationary
               </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/hardware" exact className="nav-link">
+              <NavLink to="/hardware" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Hardware
               </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/decor" exact className="nav-link">
+              <NavLink to="/decor" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Decor
               </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/events" exact className="nav-link">
+              <NavLink to="/events" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Events
               </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/cleansing" exact className="nav-link">
+              <NavLink to="/cleansing" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Cleansing
               </NavLink>
             </li>
             <li class="nav-item active pt-2 pb-2">
-              <NavLink to="/kitchen" exact className="nav-link">
+              <NavLink to="/kitchen" exact className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
                 Kitchen
               </NavLink>
             </li>
@@ -56,22 +56,22 @@ const Navbar = props => {
               <i class="fa fa-search" />
             </div>
             <div className="col-xl pt-2 pb-2">
-              <NavLink to="/buckets" exact>
+              <NavLink to="/buckets" exact data-toggle="collapse" data-target=".navbar-collapse.show">
                 <i class="fa fa-shopping-bag " />
               </NavLink>
             </div>
             <div className="col-xl pt-2 pb-2">
-              <NavLink to="/cart" exact>
+              <NavLink to="/cart" exact data-toggle="collapse" data-target=".navbar-collapse.show">
                 <i class="fa fa-shopping-cart" />
               </NavLink>
             </div>
           </div>
           <div className="row" id="navbar-sign-button">
             <div className="col-xl pr-4 pt-2 pb-2 ">
-              <a href="">SignIn</a>
+              <a href="" data-toggle="collapse" data-target=".navbar-collapse.show">SignIn</a>
             </div>
             <div className="col-xl pr-4 pt-2 pb-2">
-              <a href="">SignUp</a>
+              <a href="" data-toggle="collapse" data-target=".navbar-collapse.show">SignUp</a>
             </div>
           </div>
         </div>
