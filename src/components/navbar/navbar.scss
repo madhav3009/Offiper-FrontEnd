@@ -15,7 +15,7 @@
   margin-right: 40px;
   .fa {
     color: white;
-    font-size:1.2em;
+    font-size: 1.2em;
   }
 }
 
@@ -43,22 +43,16 @@
 
 // media queries
 
-@media only screen and (max-width:1200px){
-.navbar-nav{
+@media only screen and (max-width: 1200px) {
+  .navbar-nav {
     li:first-child {
-    padding-left: 0px;
-  }
-  li {
-    padding-right: 8px !important;
+      padding-left: 0px;
+    }
+    li {
+      padding-right: 8px !important;
     }
   }
-  #navbar-icon{
-  margin-right: 0px;
-  }
-}
-
-@media only screen and (max-width: 1200px) and (min-width:576px){
-  .navbar-brand {
-    margin-left: 45%;
+  #navbar-icon {
+    margin-right: 0px;
   }
 }
