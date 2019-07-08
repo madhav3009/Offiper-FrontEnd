@@ -16,6 +16,14 @@
   display: inline-block;
   margin-bottom: 8vh;
 }
+
+.Items:hover{
+  box-shadow: 2px 5px 4px 2px  rgb(185, 185, 185);
+  cursor: pointer;
+ }
+ .Item, .Item>img{
+ }
+ 
 .bar {
   margin-top: 15px;
   width: 200px;
@@ -34,9 +42,8 @@
 
 #SecondContainer {
   color: black;
-  background-color: white;
+  background-color: #C4436E;
   padding: 10px;
-  background-color: whitesmoke;
 }
 
 ::-webkit-scrollbar {
