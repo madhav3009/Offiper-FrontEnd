@@ -1,142 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import "./itemBanner.scss";
+import Item from "./item/item";
 
-class Itembanner extends Component {
-  render() {
-    return (
-      <div id="FirstContainer">
-        <div className="TitleContainer">
-          <div className="bar TitleHeading" />
-          <div className="TitleHeading">
-            <h1 className="itemHeading">STATIONARY</h1>{" "}
-          </div>
-          <div className="bar TitleHeading" />
+const Itembanner = props => {
+  const newProducts = props.products.filter(function(product) {
+    return product.type === props.type;
+  });
+  const items = newProducts.map(product => (
+    <Item src={product.src} price={product.price} title={product.title} type={product.type}/>
+  ));
+  return (
+    <div id="FirstContainer">
+      <div className="TitleContainer">
+        <div className="bar TitleHeading" />
+        <div className="TitleHeading">
+          <h1 className="itemHeading">{props.type}</h1>
         </div>
-
-        <div
-          id="SecondContainer"
-          style={{ display: "flex", overflowX: "auto", width: "100%" }}
-        >
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-
-          <div className="Items">
-            <img
-              src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
-              alt="Chania"
-            />
-            <div className="item-details">
-              <h5 className="productTitle">Pens</h5>
-              <h5 className="productTitle" id="price">
-                Rs 500
-              </h5>
-            </div>
-          </div>
-        </div>
+        <div className="bar TitleHeading" />
       </div>
-    );
-  }
-}
+
+      <div
+        id="SecondContainer"
+        style={{ display: "flex", overflowX: "auto", width: "100%" }}
+      >
+        {items}
+      </div>
+    </div>
+  );
+};
 
 export default Itembanner;

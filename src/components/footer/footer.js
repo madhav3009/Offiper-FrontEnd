@@ -1,10 +1,13 @@
 import React from "react";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo.png"; 
+import footerImg from '../../assets/images/footer.png'
 import "./footer.scss";
 const Footer = props => {
   return (
     <footer>
       <div class="container-fluid">
+        <img src={footerImg} style={{ width: "50%" }} />
+        <img src={footerImg} style={{ width: "50%" }} />
         <div class="row">
           <div class="col-sm-4 ">
             <img
