@@ -16,6 +16,18 @@
   display: inline-block;
   margin-bottom: 8vh;
 }
+<<<<<<< HEAD
+=======
+
+.Items:hover{
+  box-shadow: 2px 5px 4px 2px  rgb(185, 185, 185);
+  cursor: pointer;
+ }
+ .Item{
+   border-radius:5%;
+ }
+ 
+>>>>>>> 40daa76... scollbarUpdated
 .bar {
   margin-top: 15px;
   width: 200px;
@@ -40,14 +52,19 @@
 }
 
 ::-webkit-scrollbar {
-  height: 4px;
-  width: 5px;
+  height: 8px;
+  width: 10px;
   background: black;
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background:hsl(184, 100%, 50%);
-  border-radius: 10px;
+  background:rgb(72, 255, 0);
+  border-radius: 0px 0px 100px 100px;
+  height:10px;
 }
+
+
 ::-webkit-scrollbar-thumb:vertical {
   background: hsl(184, 100%, 50%);
+  
+  border-radius: 100px 0px 100px 0px;
 }
