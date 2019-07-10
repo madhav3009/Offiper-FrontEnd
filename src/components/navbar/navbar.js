@@ -51,6 +51,7 @@ const Navbar = props => {
               </NavLink>
             </li>
           </ul>
+
           <div class="row" id="navbar-icon">
             <div className="col-xl pt-2 pb-2">
               <i class="fa fa-search" />

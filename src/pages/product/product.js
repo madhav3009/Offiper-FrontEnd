@@ -20,18 +20,31 @@ const Product = props => {
         </ol>
       </div>
 
-      <div className="d-flex flex-wrap pt-4 flex-row justify-content-around ">
-        <img class="image-responsive" src={props.location.state.src} alt="" />
 
-        <div>
-          {props.location.state.title}
-          <div>Rs. 500</div>
-          <Quantity />
-          <div className="btn btn-secondary">add</div>
-        </div>
-      </div>
+<div class="container temp ">
+  <div class="row">
+    <div class="col-lg-7">
+    <img id="productImg"src={props.location.state.src} alt="" style={{width:"100%",padding:"0px",}}/> 
+</div>
+<div class="col-lg-5">
+  <div class="productTitle"> <p> Pens </p> </div>
+  <div class="productDesc"><p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma IpsumLorem IpsumLorem </p></div>
+  <div id="discPrice"><strike>Rs 1000</strike></div>
+  <div id="origPrice"><p>Rs 500</p></div>
+   <Quantity />         
+  <div class="row add">
+    <div class="col-lg-6"><button type="button"id="bucketAdd">Add To Bucket</button></div>
+   <div class="col-lg-6"><button type="button" id="cartAdd">Add To Cart</button></div>
+  </div>
+  
+  </div>
 
-    </div>
+</div>      
+</div>
+
+</div>        
+         
+
   );
 };
 
