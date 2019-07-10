@@ -43,7 +43,7 @@
 
 #SecondContainer {
   color: black;
-  background-color: #C4436E;
+  background-color: #EBEBEB;
   padding: 10px;
 }
 
@@ -53,13 +53,13 @@
   background: black;
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background:rgb(72, 255, 0);
+  background:#bEBEBE;
   border-radius: 0px 0px 100px 100px;
   height:10px;
 }
 
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: hsl(184, 100%, 50%);
+  background: #EBEBEB;
   border-radius: 100px 0px 100px 0px;
 }
