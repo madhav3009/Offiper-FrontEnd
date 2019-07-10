@@ -30,6 +30,7 @@ const Product = props => {
           <div className="btn btn-secondary">add</div>
         </div>
       </div>
+
     </div>
   );
 };
