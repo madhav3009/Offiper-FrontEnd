@@ -16,7 +16,8 @@
   width: 300px;
   height: 300px;
   background-color: white;
-  margin-right: 1%;
+  margin-right: 2%;
+  
 }
 
 .Item img {
@@ -24,4 +25,11 @@
   height: 200px;
   align-items: center;
   border-radius:5% 5%0 0 ;
+}
+
+@media only screen and (max-width: 1200px) {
+.Item, .Item img{
+  width:15em;
+}
+.Item{margin-right:4%;}
 }
