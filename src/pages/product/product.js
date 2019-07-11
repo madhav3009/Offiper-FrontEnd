@@ -1,22 +1,31 @@
 import React from "react";
 import "./product.scss";
 import Quantity from "../../components/quantity/quantity";
-import Cart from "../../components/cart/cart";
 
 const Product = props => {
-
-  console.log(props.match.url);
-  var regex = /[A-Z]/;
-  const url = props.match.url;
-  console.log(url);
-  console.log(url.match(regex));
+  console.log(props);
+  
+  const urlB = props.match.url.split("/");
+  var urlL = [];
+  for (let i = 1; i < urlB.length - 1; i++) {
+    const hreff = "/" + urlB[i];
+    urlL = (
+      <li class="breadcrumb-item">
+        <a href={hreff}>{urlB[i]}</a>
+      </li>
+    );
+  }
   return (
     <div>
       <div class="breadcrumb-box">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
+          <li class="breadcrumb-item">
+            <a href="/">Home</a>
+          </li>
+          {urlL}
+          <li class="breadcrumb-item active" aria-current="page">
+            {urlB[urlB.length - 1]}
+          </li>
         </ol>
       </div>
 

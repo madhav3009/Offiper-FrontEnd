@@ -53,7 +53,9 @@ const Navbar = props => {
           </ul>
           <div class="row" id="navbar-icon">
             <div className="col-xl pt-2 pb-2">
-              <i class="fa fa-search" />
+              <NavLink to="/search" exact data-toggle="collapse" data-target=".navbar-collapse.show">
+                <i class="fa fa-search " />
+              </NavLink>
             </div>
             <div className="col-xl pt-2 pb-2">
               <NavLink to="/buckets" exact data-toggle="collapse" data-target=".navbar-collapse.show">
