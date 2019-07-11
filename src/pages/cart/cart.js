@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React, { useContext } from "react";
+import { CartContextConsumer } from "../../context/cart.context";
 
-export default class Cart extends Component {
- render() {
-  return (
-   <div>
-    cart page
-   </div>
-  )
- }
-}
+const Cart = props => {
+	const { products } = useContext(CartContextConsumer);
+	let pro = products.map(function(p) {
+		return <li>{p.title}</li>;
+	});
+	return (
+		<div>
+			<ul>{pro}</ul>
+		</div>
+	);
+};
+
+export default Cart;
