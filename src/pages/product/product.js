@@ -27,7 +27,7 @@ const Product = props => {
     <img id="productImg"src={props.location.state.src} alt="" style={{width:"100%",padding:"0px",}}/> 
 </div>
 <div class="col-lg-5">
-  <div class="productTitle"> <p> Pens </p> </div>
+  <div class="productTitle"> <p> Pen </p> </div>
   <div class="productDesc"><p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma IpsumLorem IpsumLorem </p></div>
   <div id="discPrice"><strike>Rs 1000</strike></div>
   <div id="origPrice"><p>Rs 500</p></div>
