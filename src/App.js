@@ -13,6 +13,7 @@ import Cart from "./pages/cart/cart";
 import Buckets from "./pages/buckets/buckets";
 import Product from './pages/product/product';
 import Search from './pages/search/search';
+import Checkout from './pages/checkout/checkout';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/buckets" exact component={Buckets} />
           <Route path="/search" exact component={Search} />
           <Route path="/" exact component={Home} />
+          <Route path="/checkout" exact component={Checkout} />
 
           <Route path="/:type/:productTitle" exact component={Product}/>
         </Switch>

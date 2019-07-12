@@ -1,0 +1,20 @@
+.login {
+  font-size: 1.3em;
+  a {
+    color: #ff8e8e;
+    font-family: lato;
+  }
+  button {
+    background: #ff8e8e;
+    border: none;
+    color: white;
+    max-width: 30%;
+    min-width: 200px;
+    padding: 1%;
+    height: 100%;
+  }
+  button:hover {
+    background: black;
+    color: white;
+  }
+}
