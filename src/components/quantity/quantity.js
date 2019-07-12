@@ -11,9 +11,15 @@ const Quantity = props => {
       setCount(count - 1);
     }
   };
+  const style={
+    width:props.width
+  }
+  const buttonStyle={
+   float:props.float
+  }
   return (
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
+    <div class="input-group mb-3"  style={buttonStyle}>
+      <div class="input-group-prepend" >
         <button class="btn btn-outline-secondary" type="button" onClick={QtyD}>
           &mdash;
         </button>
@@ -22,6 +28,7 @@ const Quantity = props => {
         type="text"
         class="form-control"
         value={count}
+        style={style}
       />
       <div class="input-group-append">
         <button class="btn btn-outline-secondary" type="button" onClick={QtyI}>
