@@ -1,6 +1,5 @@
 #FirstContainer {
   color: black;
-  background-color: white;
   height: auto;
   margin-top: 5vh;
   // padding:10px;
@@ -13,17 +12,15 @@
   justify-content: center;
 }
 .TitleHeading {
-  display: inline-block;
   margin-bottom: 8vh;
+  font-size: 25px;
 }
 
 .Items:hover{
   box-shadow: 2px 5px 4px 2px  rgb(185, 185, 185);
   cursor: pointer;
  }
- .Item{
-   border-radius:5%;
- }
+ 
  
 // .bar {
 //   margin-top: 15px;
@@ -34,7 +31,7 @@
 //   background-color: black;
 // }
 .itemHeading {
-  font-size: 25px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;;
   margin-right: 20px;
   margin-left: 20px;
@@ -48,30 +45,26 @@
 
 #SecondContainer {
   color: black;
-  background-color: #EBEBEB;
+  background-color:#EBEBEB;
   padding: 10px;
   
 }
 
 ::-webkit-scrollbar {
-  height: 4px;
-  width: 10px;
-  background: rgb(247, 183, 183);
+  height: 5px;
+  width: 5px;
+  background: rgb(204, 204, 204);
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background:rgb(128, 128, 128);
-  border-radius: 0px 100px 100px 0px;
-  height:2px;
+  background:rgb(255, 136, 136);
+  border-radius: 0px 50px 50px 0px;
+  
  
 }
 
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #EBEBEB;
-  border-radius: 100px 0px 100px 0px;
+  
+  background: rgb(255, 136, 136);
 }
 
-
-@media only screen and (max-width: 1200px) {
-
-}

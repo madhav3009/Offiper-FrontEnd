@@ -10,8 +10,10 @@ const Product = props => {
   console.log(products.length);
 	let addToCartText = Data.cart.addToCart;
 	var showAlert = null;
-  const urlB = props.match.url.split("/");
-  var urlL = [];
+  
+	const urlB = props.match.url.split("/");
+   
+	var urlL = [];
   for (let i = 1; i < urlB.length - 1; i++) {
     const hreff = "/" + urlB[i];
     urlL = (
@@ -22,7 +24,7 @@ const Product = props => {
   }
 	let addToCartOnClick = () => {
 		setAddedToCart(true);
-		const p = { title: props.location.state.title };
+		const p = { title: props.location.state.title,src:props.location.state.src,price:props.location.state.price };
 		addProductToCart(p);
 	};
 
@@ -74,6 +76,7 @@ const Product = props => {
 								Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsuma
 								Lorem IpsumLorem Ipsuma Lorem IpsumLorem Ipsuma Lorem IpsumLorem
 								Ipsuma IpsumLorem IpsumLore
+							
 							</p>
 						</div>
 						<div id="discPrice">

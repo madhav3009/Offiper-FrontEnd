@@ -13,28 +13,29 @@ import Cart from "./pages/cart/cart";
 import Buckets from "./pages/buckets/buckets";
 import Product from './pages/product/product';
 import Checkout from './pages/checkout/checkout';
-// import Search from './pages/search/search';
+import Search from './pages/search/search';
 
 function App() {
+
+ 
   return (
     <>
       <Layout>
         <Switch>
-          <Route path="/stationary" exact component={Stationary} />
-          <Route path="/hardware" exact component={Hardware} />
-          <Route path="/decor" exact component={Decor} />
-          <Route path="/events" exact component={Events} />
-          <Route path="/kitchen" exact component={Kitchen} />
-          <Route path="/cleansing" exact component={Cleansing} />
-          <Route path="/cart" exact component={Cart} />
-          <Route path="/buckets" exact component={Buckets} />
-          <Route path="/checkout" exact component={Checkout} />
-          
-          {/* <Route path="/search" exact component={Search} /> */}
-          <Route path="/" exact component={Home} />
-          <Route path="/checkout" exact component={Checkout} />
-
-          <Route path="/:type/:productTitle" exact component={Product}/>
+          <Route   path="/" exact component={Home} />
+          <Route   path="/stationary" exact component={Stationary} />
+          <Route   path="/hardware" exact component={Hardware} />
+          <Route  path="/decor" exact component={Decor} />
+          <Route  path="/events" exact component={Events} />
+          <Route  path="/kitchen" exact component={Kitchen} />
+          <Route  path="/cleansing" exact component={Cleansing} />
+          <Route  path="/cart" exact component={Cart} />
+          <Route  path="/buckets" exact component={Buckets} />
+          <Route  path="/checkout" exact component={Checkout} />
+          <Route  path="/search" exact component={Search} />
+          <Route  path="/" exact component={Home} />
+          <Route  path="/checkout" exact component={Checkout} />
+          <Route  path="/:type/:productTitle" exact component={Product}/>
         </Switch>
       </Layout>
     </>

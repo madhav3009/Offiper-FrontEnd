@@ -1,35 +1,101 @@
 .title {
   display: inline;
-  padding: 3%;
+  
 }
-.price {
-  padding-left: 55%;
-}
-.item-detail {
-  h4 {
-    margin-left: 2%;
-    margin-top: 5%;
-  }
-}
+// .price {
+//   padding-left: 55%;
+// }
+
 .Item {
   float: left;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+ height:250px;
   background-color: white;
-  margin-right: 2%;
+  margin-right:2%;
+  
+
+  button{
+   z-index:1000;
+   position:relative;
+   font-size:14px;
+   border-radius:5px;
+   border:0px;
+   outline:0px;
+   cursor:pointer;
+   background-color:#EBEBEB; 
+   height:35px;
+   margin-top:-15%;
+  width:46%;
+  margin-left:2%;
+  opacity:0;
+  }
+  
+
+  #Addbucket{float:right;transform:translateX(-5%);}
+  #Addcart{float:left;}
+ 
+}
+.discount{
+color:green;
+background-color:rgb(193, 250, 108);
+font-size: 15px;
+width:6em;
+text-align: center;
+height:25px;
+border-radius: 2px;
+z-index:2;
+position: relative;
+
+
+}
+
+h4{
+  font-size:16px;
+  color:black;text-decoration: none;
+  padding-left:2%;
+}
+#Price{
+  font-size: 16px ;
+  color:black;text-decoration: none;
+
   
 }
 
 .Item img {
-  width: 300px;
+  width: 250px;
   height: 200px;
   align-items: center;
-  border-radius:5% 5%0 0 ;
+  margin-top:-10%;
+  z-index:1;
+position:relative;
 }
+.Item:hover{
+box-shadow:2px 2px 5px rgb(168, 168, 168);
+transform:scale(1.02);
+transition:transform .1s ease-in-out;
+z-index:5;
+.buttonAdd{
+  background-color:rgb(0, 0, 0);
+  width:250px;
+  height:30px;
+  margin-top:-15%;
+}
+button{opacity:1;
+transition:opacity 0.2s ease-in-out;
+}
+}
+.Item:hover button{opacity:1;transition:opacity .4s ease-in-out;}
 
 @media only screen and (max-width: 1200px) {
 .Item, .Item img{
-  width:15em;
+  width:18em;
+  
+  
 }
-.Item{margin-right:4%;}
+.Item{margin-right:2%;height:250px;
+  button{
+  font-size: 10px;
+  height:30px;
+  }
+}
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./checkout.scss";
 import Login from "../../components/form/login/login";
 import Address from '../../components/form/address/address';
+import PaymentGateway from '../../components/paymentGateway/paymentGateway';
 
 const Checkout = props => {
   function changeIconColor() {
@@ -127,7 +128,7 @@ const Checkout = props => {
             data-parent="#cartAccordion"
           >
             <div class="card-body">
-              <Login />
+              <PaymentGateway />
             </div>
           </div>
         </div>

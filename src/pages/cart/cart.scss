@@ -1,26 +1,33 @@
-.cartHead{
-h3{
- padding:0px auto;margin:2%;border-bottom:2px solid black;padding-bottom:2%;}
-button{margin:1%;width:48%;height:50px;background-color:#F7B7B7 !important;border-radius:20px;border:2px solid rgb(255, 255, 255);cursor:pointer;outline:0px solid white;}
-}
-.close{margin-top:1%;margin-left:-5%;margin-right:0.5%;width:40px;height:40px;color:rgb(255, 255, 255);font-size:18px !important;background-color:rgb(255, 89, 89) !important;border-radius:50%;outline:0px !important;box-shadow: 2px 2px black;}
 
+.cartHead{
+    h3{
+        padding:0px auto;margin:2%;border-bottom:2px solid black;padding-bottom:2%;}
+    
+// position:fixed;top:80px;width:100%;height:50px;background-color:white;   
+
+button{margin:1%;width:48%;height:50px;background-color:#F7B7B7 !important;border-radius:20px;border:2px solid rgb(255, 255, 255);cursor:pointer;outline:0px solid white;
+    font-size:16px;font-weight:500;}
+}
 .bg-secondary{
-    max-width:100%;background-color: white !important;box-shadow: 4px 5px 5px  rgb(185, 184, 184) ; max-width:100% !important;height:auto;margin-top:2%;;
+    max-width:100%;background-color: white !important;box-shadow: 4px 5px 5px  rgb(185, 184, 184) ; max-width:100% !important;height:110px;margin-top:2%;;
 button{
     background-color: #DCDCDC;
     height:30px;
-    width:100%;
-    border-radius:10px; 
+    width:100%; 
     outline:0px;
     border:0px;
     font-size: 10px;
-} .pleft{
-    padding-left:25%;
+    margin-top:5%;
+} 
+
+#itemInCartImg{width:150px;height:auto;padding-right:5%;}
+.pleft{
+    padding-left:25%;padding-top:1%;
+
       }
     .pl{padding-left: 1%;}
     .plefty{
-        padding-left:25%;
+        padding-left:25%;  padding-top:1%;
     }
 
 
@@ -33,12 +40,30 @@ span{font-weight: bold;}
         .bg-secondary{
            
             .pleft{
-                padding-left:8%;
+                padding-left:8%;  padding-top:1%;
                   }
-                .pl{padding-left: 1%;}
+                .pl{padding-left: 1%;  padding-top:1%;}
                 .plefty{
-                    padding-left:10%;
+                    padding-left:10%;  padding-top:1%;
                 }
+            
+            
+        }
+    }
+
+    @media screen and (max-width:410px)
+    {
+       
+        .bg-secondary{
+           #itemInCartImg{padding-right:1%;}
+            .pleft{
+                padding-left:1%;
+                  }
+                .pl{padding-left:1%;padding-right:1%;}
+                .plefty{
+                    padding-left:1%;
+                }
+                span{font-size: 14px;}
             
             
         }
