@@ -6,14 +6,19 @@ import { ProductContextConsumer } from "../../../context/product.context";
 const Item = props => {
   const { storeProductData } = useContext(ProductContextConsumer);
   function addProductDataToContext() {
-    let p={title:props.title,src:props.src,price:props.price}
+    let p = {
+      title: props.title,
+      src: props.src,
+      price: props.price,
+      handle: props.handle
+    };
     storeProductData(p);
   }
   return (
     <div className="Item">
       <NavLink
         to={{
-          pathname: props.type + "/" + props.title
+          pathname: props.type + "/" + props.handle
         }}
         exact
         onClick={addProductDataToContext}

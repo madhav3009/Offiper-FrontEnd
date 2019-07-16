@@ -3,228 +3,266 @@
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-156"
   },
   {
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2013/07/13/09/51/pen-filler-156146_960_720.png",
-    "price": "500"
+    "price": "500",
+    "handle": "pen-filler"
   },
   {
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2017/03/21/20/16/leave-2163258_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "leave"
   },
   {
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2019/01/27/19/05/filler-3958737_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "pen-filler-1"
   },
   {
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2013/07/12/17/41/computer-mouse-152249__340.png",
-    "price": "500"
+    "price": "500",
+    "handle": "computer-mouse"
   },
   {
     "type": "hardware",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2014/05/03/01/03/macbook-336704__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "macbook"
   },
   {
     "type": "hardware",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2012/12/17/19/14/keyboard-70506__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "keyboard"
   },
   {
     "type": "hardware",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-1"
   },
   {
     "type": "hardware",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "stationary",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/05/15/14/50/concert-768722__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "concert"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "cheers"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/09/18/11/38/audience-945449__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "audience"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/07/02/10/16/circus-828680__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "circus"
   },
   {
     "type": "events",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/01/19/18/02/concerts-1150042__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "concert-1"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/05/31/11/24/tap-791172__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "tap"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/12/11/17/51/knife-1088529__340.png",
-    "price": "500"
+    "price": "500",
+    "handle": "knife"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2014/11/24/14/39/potato-544073__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "potato"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "cleansing",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/12/26/17/28/food-1932466__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "foot"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2018/11/29/04/16/walnuts-3844990__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "walnuts"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/09/17/17/19/egg-944495__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "egg"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "cooking"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "kitchen",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/07/02/20/37/cup-829527__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "cup"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2017/11/07/20/43/xmas-2928142__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "xas"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/04/26/22/31/bride-1355473__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bride"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2016/08/02/23/52/bag-1565402_960_720.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2017/11/16/08/35/box-2953722__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   },
   {
     "type": "decor",
     "title": "pen",
     "src": "https://cdn.pixabay.com/photo/2015/04/10/17/03/pots-716579__340.jpg",
-    "price": "500"
+    "price": "500",
+    "handle": "bag-2"
   }
 ]
