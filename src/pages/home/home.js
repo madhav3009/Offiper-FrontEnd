@@ -17,6 +17,12 @@ export default class Home extends Component {
       products: Products
     };
   }
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      window.scrollTo(0, 0);
+    }
+  }
+
   render() {
     const itemBanner = this.state.type.map(type => (
       <Itembanner

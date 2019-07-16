@@ -5,13 +5,19 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { CartContextProvider } from "./context/cart.context";
+import ScrollToTop from "./hoc/scrollToTop/scrollToTop";
+import { ProductContextProvider } from "./context/product.context";
 
 const app = (
-	<CartContextProvider>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
-	</CartContextProvider>
+  <CartContextProvider>
+    <ProductContextProvider>
+      <BrowserRouter>
+        <ScrollToTop>
+          <App />
+        </ScrollToTop>
+      </BrowserRouter>
+    </ProductContextProvider>
+  </CartContextProvider>
 );
 ReactDOM.render(app, document.getElementById("root"));
 

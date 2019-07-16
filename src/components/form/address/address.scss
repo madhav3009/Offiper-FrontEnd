@@ -1,17 +1,27 @@
-.address{button {
+.address {
+  button {
     background: #ff8e8e;
     border: none;
     color: white;
-    max-width: 30%;
-    min-width: 200px;
     padding: 1%;
-    height: 100%;display: block; margin: 0 auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
   }
   button:hover {
     background: black;
     color: white;
-
+  }
+  .col {
+    padding:5px;
+  }
+}
+@media screen and (max-width: 676px) {
+  .address{button {
+    min-width: 80%;
   }
   .col{
-   margin-bottom:20px;
-  }}
+    padding-left:25px;
+  }
+}
+}

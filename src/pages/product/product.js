@@ -3,11 +3,13 @@ import "./product.scss";
 import Quantity from "../../components/quantity/quantity";
 import Data from "../../assets/config/setting_data.json";
 import { CartContextConsumer } from "../../context/cart.context";
+import {ProductContextConsumer} from '../../context/product.context';
 
 const Product = props => {
 	const [addedToCart, setAddedToCart] = useState(false);
-  const { products,addProductToCart } = useContext(CartContextConsumer);
-  console.log(products.length);
+		const { addProductToCart } = useContext(CartContextConsumer);
+	const { productData } = useContext(ProductContextConsumer);
+  console.log(productData);
 	let addToCartText = Data.cart.addToCart;
 	var showAlert = null;
   const urlB = props.match.url.split("/");
@@ -60,7 +62,7 @@ const Product = props => {
 					<div class="col-lg-7">
 						<img
 							id="productImg"
-							src={props.location.state.src}
+							src={productData.src}
 							alt=""
 							style={{ width: "100%", padding: "0px" }}
 						/>
