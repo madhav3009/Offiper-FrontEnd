@@ -46,8 +46,8 @@
 #SecondContainer {
   color: black;
   background-color:#EBEBEB;
-  padding: 10px;
-  
+  width:100%;
+  overflow-x: auto  
 }
 
 ::-webkit-scrollbar {

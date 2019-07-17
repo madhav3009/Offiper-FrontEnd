@@ -28,9 +28,8 @@ const Itembanner = props => {
 
       <div
         id="SecondContainer"
-        style={{ display: "flex", overflowX: "auto", width: "100%" }}
+        class="d-flex flex-row p-2"
       >
-        
         {items}
       </div>
     </div>
