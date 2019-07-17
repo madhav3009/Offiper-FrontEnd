@@ -1,20 +1,11 @@
-.title {
-  display: inline;
-  
-}
-// .price {
-//   padding-left: 55%;
-// }
-
 .Item {
   float: left;
   width: 250px;
  height:250px;
   background-color: white;
   margin-right:2%;
-  
 
-  button{
+   button{
    z-index:1000;
    position:relative;
    font-size:14px;
@@ -22,19 +13,18 @@
    border:0px;
    outline:0px;
    cursor:pointer;
-   background-color:#EBEBEB; 
+   background-color:rgb(255, 255, 255); 
    height:35px;
    margin-top:-15%;
   width:46%;
-  margin-left:2%;
+  left:1%;
   opacity:0;
   }
-  
-
   #Addbucket{float:right;transform:translateX(-5%);}
   #Addcart{float:left;}
  
 }
+
 .discount{
 color:green;
 background-color:rgb(193, 250, 108);
@@ -42,11 +32,9 @@ font-size: 15px;
 width:6em;
 text-align: center;
 height:25px;
-border-radius: 2px;
+border-radius: 2px solid green;
 z-index:2;
 position: relative;
-
-
 }
 
 h4{
@@ -57,8 +45,6 @@ h4{
 #Price{
   font-size: 16px ;
   color:black;text-decoration: none;
-
-  
 }
 
 .Item img {
@@ -89,13 +75,11 @@ transition:opacity 0.2s ease-in-out;
 @media only screen and (max-width: 1200px) {
 .Item, .Item img{
   width:18em;
-  
-  
-}
+  }
 .Item{margin-right:2%;height:250px;
   button{
   font-size: 10px;
   height:30px;
-  }
-}
+  } 
+ }
 }

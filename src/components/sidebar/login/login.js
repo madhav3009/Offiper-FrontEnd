@@ -7,19 +7,13 @@ const Login = props => {
     <div>
 		    <div>
       <div class="d-flex justify-content-center ">
-        <div
-          class="g-signin2 m-2"
-          data-onsuccess="onSignIn"
-          data-theme="dark"
-        />
-        <div
-          class="g-signin2 m-2"
-          data-onsuccess="onSignIn"
-          data-theme="dark"
-        />
+      <div class="g-signin2" data-onsuccess="onSignIn" ></div>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
       </div>
+
       <br />
-      <h3>OR</h3>
+      <h4>Or</h4>
+      
       <br />
       <label id="email">Email/Phone number</label>
       <br />

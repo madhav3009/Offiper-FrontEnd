@@ -29,9 +29,12 @@ const Item = props => {
       >
         <img src={props.src} alt="" />
         
+
+        
         </NavLink>
           
           <button id="Addbucket">Add To Bucket</button>
+          
           <button id="Addcart">Add To Cart</button>
      
 

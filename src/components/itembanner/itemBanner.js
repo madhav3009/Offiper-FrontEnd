@@ -3,6 +3,7 @@ import "./itemBanner.scss";
 import Item from "./item/item";
 
 
+
 const Itembanner = props => {
   const newProducts = props.products.filter(function(product) {
     return product.type === props.type;
@@ -25,12 +26,11 @@ const Itembanner = props => {
         </div>
         <div className="bar TitleHeading" />
       </div>
-
       <div
         id="SecondContainer"
         style={{ display: "flex", overflowX: "auto", width: "100%" }}
       >
-        
+   
         {items}
       </div>
     </div>
