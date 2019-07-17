@@ -34,7 +34,7 @@ const Product = props => {
   }
 	let addToCartOnClick = () => {
 		setAddedToCart(true);
-		const p = { title: props.location.state.title };
+		const p = { title: props.match.params.handle };
 		addProductToCart(p);
 	};
 
@@ -187,7 +187,6 @@ const Product = props => {
 									style={viewCartStyle}>
 									{addToCartText}
 								</button>
-
 								{showAlert}
 							</div>
 						</div>
