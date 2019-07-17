@@ -9,7 +9,6 @@
     border: none;
     color: white;
     max-width: 30%;
-    min-width: 200px;
     padding: 1%;
     height: 100%;
   }
@@ -17,4 +16,10 @@
     background: black;
     color: white;
   }
+}
+@media screen and (max-width: 676px) {
+  .login{button {
+    min-width: 80%;
+  }
+}
 }

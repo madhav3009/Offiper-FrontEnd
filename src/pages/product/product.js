@@ -3,11 +3,23 @@ import "./product.scss";
 import Quantity from "../../components/quantity/quantity";
 import Data from "../../assets/config/setting_data.json";
 import { CartContextConsumer } from "../../context/cart.context";
+import Products from '../../assets/config/products.json';
 
 const Product = props => {
 	const [addedToCart, setAddedToCart] = useState(false);
-  const { products,addProductToCart } = useContext(CartContextConsumer);
-  console.log(products.length);
+		const { addProductToCart } = useContext(CartContextConsumer);
+		let productHandle=props.match.params.handle;
+		let productData=null;
+		for (let index = 0; index < Products.length; index++) {
+			console.log(productHandle)
+			if(Products[index].handle==productHandle){
+				productData=Products[index].src;
+			}
+		}
+		console.log('productdata');
+		
+		console.log(productData);
+		
 	let addToCartText = Data.cart.addToCart;
 	var showAlert = null;
   
@@ -24,7 +36,7 @@ const Product = props => {
   }
 	let addToCartOnClick = () => {
 		setAddedToCart(true);
-		const p = { title: props.location.state.title,src:props.location.state.src,price:props.location.state.price };
+		const p = { title: props.match.params.handle };
 		addProductToCart(p);
 	};
 
@@ -52,7 +64,7 @@ const Product = props => {
             </li>
             {urlL}
             <li class="breadcrumb-item active" aria-current="page">
-              {urlB[urlB.length - 1]}
+              {props.match.params.handle}
             </li>
 				</ol>
 			</div>
@@ -62,7 +74,7 @@ const Product = props => {
 					<div class="col-lg-7">
 						<img
 							id="productImg"
-							src={props.location.state.src}
+							src={productData}
 							alt=""
 							style={{ width: "100%", padding: "0px" }}
 						/>
@@ -178,7 +190,6 @@ const Product = props => {
 									style={viewCartStyle}>
 									{addToCartText}
 								</button>
-
 								{showAlert}
 							</div>
 						</div>

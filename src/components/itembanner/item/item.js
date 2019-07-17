@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./item.scss";
 import { NavLink } from "react-router-dom";
+import { ProductContextConsumer } from "../../../context/product.context";
 
 const Item = props => {
+  const { storeProductData } = useContext(ProductContextConsumer);
+  function addProductDataToContext() {
+    let p = {
+      title: props.title,
+      src: props.src,
+      price: props.price,
+      handle: props.handle
+    };
+    storeProductData(p);
+  }
   return (
 
 
@@ -11,10 +22,10 @@ const Item = props => {
          <div className="discount">50% OFF</div>
          <NavLink
         to={{
-          pathname: props.type + "/" + props.title,
-          state: { title: props.title, price: props.price, src: props.src }
+          pathname: props.type + "/" + props.handle
         }}
         exact
+        onClick={addProductDataToContext}
       >
         <img src={props.src} alt="" />
         

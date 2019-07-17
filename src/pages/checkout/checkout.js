@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./checkout.scss";
 import Login from "../../components/form/login/login";
-import Address from '../../components/form/address/address';
-import PaymentGateway from '../../components/paymentGateway/paymentGateway';
-
+import Address from "../../components/form/address/address";
+import PaymentGateway from "../../components/paymentGateway/paymentGateway";
+import $ from "jquery";
 const Checkout = props => {
-  function changeIconColor() {
-    console.log();
-  }
   return (
     <div class="checkoutPage">
       <h2>Payment</h2>
@@ -21,25 +18,25 @@ const Checkout = props => {
             aria-expanded="true"
             aria-controls="collapseAccount"
             id="account"
-            onClick={changeIconColor}
           >
-              <div class="d-flex">
-          <div className="col-icon text-center ">
-           <i class="fa fa-user" />
-          </div>
-                <div class="accord-title">
-                  <p class="h3">
-                    Account
-                    <br />
-                    <small class="h6">
-                      To place your order now, log in to your existing account or sigin up
-                    </small>
-                  </p>
-                </div>
+            <div class="d-flex">
+              <div className="col-icon text-center">
+                <i class="fa fa-user" />
+              </div>
+              <div class="accord-title">
+                <p class="h3">
+                  Account
+                  <br />
+                  <small class="h6">
+                    To place your order now, log in to your existing account or
+                    sigin up
+                  </small>
+                </p>
+              </div>
 
-          <div className="col-icon text-center">
-           <i class="fa fa-plus" />
-                </div>
+              <div className="col-icon text-center">
+                <i class="fa fa-plus" />
+              </div>
             </div>
           </div>
 
@@ -62,25 +59,22 @@ const Checkout = props => {
             aria-expanded="false"
             aria-controls="collapseAddress"
             id="address"
-            onClick={changeIconColor}
           >
-              <div class="d-flex">
-          <div className="col-icon text-center ">
-           <i class="fa fa-user" />
-          </div>
-                <div class="accord-title">
-                  <p class="h3">
-                    Delivery Address
-                    <br />
-                    <small class="h6">
-                      To receive your product
-                    </small>
-                  </p>
-                </div>
+            <div class="d-flex">
+              <div className="col-icon text-center ">
+                <i class="fa fa-map-marker" />
+              </div>
+              <div class="accord-title">
+                <p class="h3">
+                  Delivery Address
+                  <br />
+                  <small class="h6">To receive your product</small>
+                </p>
+              </div>
 
-          <div className="col-icon text-center">
-           <i class="fa fa-plus" />
-                </div>
+              <div className="col-icon text-center">
+                <i class="fa fa-plus" />
+              </div>
             </div>
           </div>
 
@@ -90,7 +84,7 @@ const Checkout = props => {
             data-parent="#cartAccordion"
           >
             <div class="card-body">
-             <Address/>
+              <Address />
             </div>
           </div>
         </div>
@@ -103,22 +97,18 @@ const Checkout = props => {
             aria-expanded="false"
             aria-controls="collapsePayment"
             id="payment"
-            onClick={changeIconColor}
           >
-              <div class="d-flex">
-          <div className="col-icon text-center ">
-           <i class="fa fa-user" />
-          </div>
-                <div class="accord-title">
-                  <p class="h3">
-                    Payment
-                   
-                  </p>
-                </div>
+            <div class="d-flex">
+              <div className="col-icon text-center ">
+                <i class="fa fa-credit-card" />
+              </div>
+              <div class="accord-title">
+                <p class="h3">Payment</p>
+              </div>
 
-          <div className="col-icon text-center">
-           <i class="fa fa-plus" />
-                </div>
+              <div className="col-icon text-center">
+                <i class="fa fa-plus" />
+              </div>
             </div>
           </div>
 

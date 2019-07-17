@@ -1,71 +1,85 @@
+.bgh {
+  background: red;
+}
 .checkoutPage {
-  padding: 50px;
-  
-  .row{
-    background:#ebebeb;
-    color:black;
+  padding: 10px;
+
+  .row {
+    background: #ebebeb;
+    color: black;
   }
   .fa {
     font-size: 2em;
     color: white;
   }
-  .col-icon {
-    background: black;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    padding-top: 10px;
-    min-width:35px;
-  }
+
   .card {
     border: none;
     margin-bottom: 3%;
   }
+  .col-icon {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding-top: 13px;
+    min-width: 35px;
+  }
+  div[aria-expanded="true"] {
+    .col-icon {
+      background: rgb(251, 177, 178);
+    }
+  }
+  div[aria-expanded="false"] {
+    .col-icon {
+      background: black;
+    }
+  }
   .card-header {
     background-color: #ebebeb;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     margin: 0;
     color: black;
     font-family: lato;
   }
+
   .card-body {
     background-color: #ebebeb;
     padding: 30px;
     border-top: 2px solid #ff8e8e;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 10px 10px;
   }
-  .accord-title{
-    padding-left:3%;
-    width:90%;
+  .accord-title {
+    padding-left: 3%;
+    width: 90%;
   }
-  
 }
-@media screen and (max-width: 992px) and (min-width:676px){
+@media screen and (max-width: 992px) and (min-width: 676px) {
   .checkoutPage {
+    
     .fa {
       font-size: 1.5em;
     }
 
     .col-icon {
-      padding-top: 10px;
       width: 50px;
       height: 50px;
-      margin-top:15px;
+      margin-top: 15px;
     }
   }
 }
-@media screen and (max-width:666px){
+@media screen and (max-width: 676px) {
   .checkoutPage {
+    
     .fa {
       font-size: 1.2em;
     }
 
     .col-icon {
-      padding-top: 7px;
+      padding-top: 10px;
       width: 40px;
       height: 40px;
-      margin-top:15px;
+      margin-top: 15px;
     }
   }
 }

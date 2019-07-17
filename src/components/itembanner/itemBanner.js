@@ -8,7 +8,13 @@ const Itembanner = props => {
     return product.type === props.type;
   });
   const items = newProducts.map(product => (
-    <Item src={product.src} price={product.price} title={product.title} type={product.type}/>
+    <Item
+      src={product.src}
+      price={product.price}
+      title={product.title}
+      type={product.type}
+      handle={product.handle}
+    />
   ));
 
   return (
