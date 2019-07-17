@@ -1,0 +1,24 @@
+.login {
+  font-size: 1.3em;
+}
+
+.login a {
+  color: #ff8e8e;
+  font-family: lato;
+}
+
+.login button {
+  background: #ff8e8e;
+  border: none;
+  color: white;
+  max-width: 30%;
+  min-width: 200px;
+  padding: 1%;
+  height: 100%;
+}
+
+.login button:hover {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=login.css.map */

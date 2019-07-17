@@ -1,0 +1,36 @@
+
+.modal-body{ background-image:url('../../../assets/images/loginBack.png');
+    button{
+      width:50%;
+      height:40px;
+      background-color: #FF8888;
+      margin:5%;
+      border:2px solid #FF8888;
+      color:white;
+      border-radius: 50px;
+      outline:0px;
+      cursor: pointer;
+    }
+    background-size: cover;
+    background-position-x: -200px;
+    input[type="text"]
+    {
+     border:0px;
+     border-bottom:2px solid pink;
+     padding:10px;
+     width:50%;
+     outline:0px;
+     text-align:left;
+     background:transparent;
+     font-size:20px;
+     color:black;
+     text-transform: capitalize;
+  
+    }
+    input[type="text"]:focus {
+   border-color:#4285F4;
+   transition:width 0.5s; 
+    }
+    
+    } 
+  

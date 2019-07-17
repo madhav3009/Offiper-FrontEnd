@@ -7,7 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 import { CartContextProvider } from "./context/cart.context";
 
 const app = (
-	<CartContextProvider>
+		<CartContextProvider>
+
 		<BrowserRouter>
 			<App />
 		</BrowserRouter>

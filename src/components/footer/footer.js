@@ -14,7 +14,7 @@ const Footer = props => {
               src={Logo}
               class="img-fluid"
               id="Logo"
-              style={{ width: "40vh", paddingTop: "5vh" }}
+              style={{ width: "40vh",paddingTop:"5vh" }}
             />
           </div>
 

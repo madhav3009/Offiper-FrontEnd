@@ -25,7 +25,6 @@ const Item = props => {
      
 
         <div className="item-detail">
-         
           <h4>{props.title}</h4>
           <h4 id="Price">{props.price} &nbsp; <strike>Rs 1000</strike>
           <br />

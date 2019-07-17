@@ -1,7 +1,8 @@
 import React from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
-
+import Login from '../accessModal/login/login'
+import SignUp from '../accessModal/signUp/signup'
 const Navbar = props => {
 
 	return (
@@ -25,6 +26,7 @@ const Navbar = props => {
 								to="/stationary"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Stationary
@@ -35,6 +37,7 @@ const Navbar = props => {
 								to="/hardware"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Hardware
@@ -45,6 +48,7 @@ const Navbar = props => {
 								to="/decor"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Decor
@@ -55,6 +59,7 @@ const Navbar = props => {
 								to="/events"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Events
@@ -65,6 +70,7 @@ const Navbar = props => {
 								to="/cleansing"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Cleansing
@@ -75,6 +81,7 @@ const Navbar = props => {
 								to="/kitchen"
 								exact
 								className="nav-link"
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								Kitchen
@@ -87,6 +94,7 @@ const Navbar = props => {
 							<NavLink
 								to="/search"
 								exact
+								activeClassName="activeNavColor"
 								data-toggle="collapse"
 								data-target=".navbar-collapse.show">
 								<i class="fa fa-search " />
@@ -97,6 +105,7 @@ const Navbar = props => {
 								to="/buckets"
 								exact
 								data-toggle="collapse"
+								
 								data-target=".navbar-collapse.show">
 								<i class="fa fa-shopping-bag " />
 							</NavLink>
@@ -111,23 +120,76 @@ const Navbar = props => {
 							</NavLink>
 						</div>
 					</div>
-					<div className="row" id="navbar-sign-button">
-						<div className="col-xl pr-4 pt-2 pb-2 ">
-							<a
-								href=""
-								data-toggle="collapse"
-								data-target=".navbar-collapse.show">
-								SignIn
-							</a>
-						</div>
-						<div className="col-xl pr-4 pt-2 pb-2">
-							<a
-								href=""
-								data-toggle="collapse"
-								data-target=".navbar-collapse.show">
-								SignUp
-							</a>
-						</div>
+					
+				
+<div className="row" id="navbar-sign-button">
+<div className="col-xl pr-4 pt-2 pb-2 ">
+  <button type="button"
+  id="SignIn"
+  data-toggle="modal"
+  data-target="#SignInModal">SignIn</button>
+  <div
+  class="modal fade"
+  id="SignInModal"
+  tabindex="-1"
+  role="dialog">
+        <div
+        class="modal-dialog "
+        role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title">Login</h5>
+    <button style={{outline:"none"}}
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true" style={{color:"#FF8888"}}>&times;</span>
+    </button>
+     </div>
+<div class="modal-body">
+<Login />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div className="col-xl pr-4 pt-2 pb-2 ">
+  <button type="button"
+  id="SignUp"
+  data-toggle="modal"
+  data-target="#SignUpModal">SignUp</button>
+  
+  <div
+  class="modal fade "
+  id="SignUpModal"
+  tabindex="-1"
+  role="dialog">
+        <div
+        class="modal-dialog "
+        role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title">SignUp</h5>
+    <button style={{outline:"none"}}
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close">
+        <span aria-hidden="true" style={{color:"#FF8888"}}>&times;</span>
+    </button>
+     </div>
+<div class="modal-body">
+<SignUp />
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 					</div>
 				</div>
 			</nav>
