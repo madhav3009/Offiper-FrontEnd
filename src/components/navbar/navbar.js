@@ -1,13 +1,30 @@
 import React from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
-import Login from '../accessModal/login/login'
-import SignUp from '../accessModal/signUp/signup'
+import Sidebar from '../../components/sidebar/sidebar'
 const Navbar = props => {
+const [open,setOpen]=React.useState(false);
+const [option,setOption]=React.useState('hu');
+var modal=null;
+if(open){
+	modal=<Sidebar close={()=>{setOpen(false)}} option={option}/>
+}
 
+function openSidebar(e) {
+	let option=e.target.id;
+	console.log(e.target);
+	
+	console.log(option);
+	
+	setOpen(true);
+	setOption(option);
+}
 	return (
 		<header>
+			
+			{modal}
 			<nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark">
+
 				<NavLink to="/" exact className="navbar-brand">
 					Offiper
 				</NavLink>
@@ -123,71 +140,19 @@ const Navbar = props => {
 					
 				
 <div className="row" id="navbar-sign-button">
+
 <div className="col-xl pr-4 pt-2 pb-2 ">
   <button type="button"
-  id="SignIn"
-  data-toggle="modal"
-  data-target="#SignInModal">SignIn</button>
-  <div
-  class="modal fade"
-  id="SignInModal"
-  tabindex="-1"
-  role="dialog">
-        <div
-        class="modal-dialog "
-        role="document">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h5 class="modal-title">Login</h5>
-    <button style={{outline:"none"}}
-        type="button"
-        class="close"
-        data-dismiss="modal"
-        aria-label="Close">
-        <span aria-hidden="true" style={{color:"#FF8888"}}>&times;</span>
-    </button>
-     </div>
-<div class="modal-body">
-<Login />
-</div>
-</div>
-</div>
-</div>
-</div>
+  id="LogIn"
+  onClick={(e)=>{openSidebar(e)}}>LogIn</button>
+  </div>
 
 
-<div className="col-xl pr-4 pt-2 pb-2 ">
+  <div className="col-xl pr-4 pt-2 pb-2 ">
   <button type="button"
   id="SignUp"
-  data-toggle="modal"
-  data-target="#SignUpModal">SignUp</button>
-  
-  <div
-  class="modal fade "
-  id="SignUpModal"
-  tabindex="-1"
-  role="dialog">
-        <div
-        class="modal-dialog "
-        role="document">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h5 class="modal-title">SignUp</h5>
-    <button style={{outline:"none"}}
-        type="button"
-        class="close"
-        data-dismiss="modal"
-        aria-label="Close">
-        <span aria-hidden="true" style={{color:"#FF8888"}}>&times;</span>
-    </button>
-     </div>
-<div class="modal-body">
-<SignUp />
-</div>
-</div>
-</div>
-</div>
-</div>
+  onClick={(e)=>{openSidebar(e)}}>SignUp</button>
+  </div>
 
 
 					</div>

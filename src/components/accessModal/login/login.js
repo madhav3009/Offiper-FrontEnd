@@ -8,12 +8,12 @@ const Login = props => {
 		    <div>
       <div class="d-flex justify-content-center ">
         <div
-          class="g-signin2 m-3"
+          class="g-signin2 m-2"
           data-onsuccess="onSignIn"
           data-theme="dark"
         />
         <div
-          class="g-signin2 m-3"
+          class="g-signin2 m-2"
           data-onsuccess="onSignIn"
           data-theme="dark"
         />

@@ -13,8 +13,16 @@ const Item = props => {
         }}
         exact
       >
-        <img src={props.src} alt="" class="img-responsive" />
-      </NavLink>
+        <img src={props.src} alt="" />
+        
+
+        
+        </NavLink>
+          
+          <button id="Addbucket">Add To Bucket</button>
+          
+          <button id="Addcart">Add To Cart</button>
+     
 
       <button id="Addbucket">Add To Bucket</button>
       <button id="Addcart">Add To Cart</button>
