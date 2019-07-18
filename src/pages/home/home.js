@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Itembanner from "../../components/itembanner/itemBanner";
 import Products from '../../assets/config/products.json';
-
+import OfferBanner from '../../components/offerbanner/offerbanner'
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -25,11 +25,14 @@ export default class Home extends Component {
 
   render() {
     const itemBanner = this.state.type.map(type => (
+      
       <Itembanner
         type={type}
         products={this.state.products}
       />
     ));
-    return <div>{itemBanner}</div>;
+    return <div>
+    <OfferBanner />
+    {itemBanner}</div>;
   }
 }

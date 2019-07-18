@@ -36,8 +36,13 @@
     opacity:1;
 
     #title{
-        font-size:26px;
-        padding:10px;
+        font-size:18px!important;
+        padding-bottom:20px;
+        margin-bottom:10%;
+        left:0px;
+        text-align:left;
+        top:0px;
+    border-bottom:2px solid rgb(53, 53, 53);
 
     }
    button{
@@ -89,6 +94,8 @@
 @media screen and (max-width:1200px)
 {
     .sidebar{
+        input[type="text"]
+        {width:90%;}
         width:100%;
     }
 }

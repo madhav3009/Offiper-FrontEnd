@@ -1,7 +1,9 @@
-import React, { Component } from "react";
-import "./sidebar.scss";
-import Login from "../sidebar/login/login";
-import Signup from "../sidebar/signUp/signup";
+import React, { Component } from 'react';
+import {Animated} from "react-animated-css";
+import './sidebar.scss'
+
+import Login from '../sidebar/login/login'
+import Signup from '../sidebar/signUp/signup'
 
 class sidebar extends Component {
   render() {
@@ -14,18 +16,17 @@ class sidebar extends Component {
         <div class="sidebarLeft" />
 
             <div class="sidebar animated slideInRight">
-                <div class="g-signin2" data-onsuccess="onSignIn" />
-          <span class="closeBtn" onClick={this.props.close}>
-            <i class="fa fa-times-circle" />
-          </span>
-          <div id="title">
-            <h2>{this.props.option}</h2>
-          </div>
-          {option}
-        </div>
-      </div>
-    );
-  }
+           
+            <span class="closeBtn" onClick={this.props.close}><i class="fa fa-times-circle"/></span>     
+            <div id="title">
+            <h4>{this.props.option}</h4>
+           
+           </div>
+            {option}
+            </div>
+            </div>
+        );
+    }
 }
 
 export default sidebar;

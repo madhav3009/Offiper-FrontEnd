@@ -19,7 +19,11 @@ const Itembanner = props => {
   ));
 
   return (
+    
+
+    
     <div id="FirstContainer">
+     
       <div className="TitleContainer">
         <div className="TitleHeading">
           <h3 className="itemHeading">{props.type}</h3>
@@ -34,6 +38,7 @@ const Itembanner = props => {
         {items}
       </div>
     </div>
+    
   );
 };
 
