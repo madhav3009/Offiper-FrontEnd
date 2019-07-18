@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import {Animated} from "react-animated-css";
 import './sidebar.scss'
 
-import LoginOtp from '../sidebar/loginotp/loginotp'
+import Login from '../sidebar/login/login'
 import Signup from '../sidebar/signUp/signup'
 
 class sidebar extends Component {
     render() {
-        var option= <LoginOtp/>;
+        var option= <Login/>;
         if (this.props.option=='SignUp') {
             option=<Signup/>
         }

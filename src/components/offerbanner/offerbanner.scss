@@ -1,0 +1,31 @@
+#banner{
+    flex-direction: column;
+    background-image:linear-gradient(#FC65B6,#6F72E7);
+  margin-top:0%;
+   text-align: center;
+    padding-top:2%;
+    h1,h2{color:white;
+    }
+  
+  }
+
+  
+@media only screen and (max-width: 600px) {
+
+    #banner{
+      margin-top:-1%;
+      padding-top:15%;
+      h1{font-size:40px;}
+    }
+
+
+
+@media only screen and (max-width: 400px) {
+
+#banner{
+  margin-top:-1%;
+  padding-top:20%;
+  h1{font-size:60px;}
+
+}
+}}
