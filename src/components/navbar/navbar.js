@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.scss";
 import { NavLink } from "react-router-dom";
 import Sidebar from '../../components/sidebar/sidebar'
+import topLogo from '../../assets/images/toplogo.png'
 const Navbar = props => {
 const [open,setOpen]=React.useState(false);
 const [option,setOption]=React.useState('hu');
@@ -26,14 +27,13 @@ function openSidebar(e) {
 			<nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark">
 
 				<NavLink to="/" exact className="navbar-brand">
-					Offiper
+					Offi<span id="per">per</span>
 				</NavLink>
 				<button
 					class="navbar-toggler"
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarSupportedContent">
-					<span class="navbar-toggler-icon" />
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">

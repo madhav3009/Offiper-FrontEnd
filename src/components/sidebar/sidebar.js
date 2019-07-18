@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {Animated} from "react-animated-css";
 import './sidebar.scss'
-import Login from '../sidebar/login/login'
+
+import LoginOtp from '../sidebar/loginotp/loginotp'
 import Signup from '../sidebar/signUp/signup'
 
 class sidebar extends Component {
     render() {
-        var option= <Login/>;
+        var option= <LoginOtp/>;
         if (this.props.option=='SignUp') {
             option=<Signup/>
         }
@@ -18,7 +19,7 @@ class sidebar extends Component {
            
             <span class="closeBtn" onClick={this.props.close}><i class="fa fa-times-circle"/></span>     
             <div id="title">
-            <h2>{this.props.option}</h2>
+            <h4>{this.props.option}</h4>
            
            </div>
             {option}
