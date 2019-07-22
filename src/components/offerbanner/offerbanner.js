@@ -16,15 +16,9 @@ class offerbanner extends Component {
 				<h2>Limited Time Period</h2>
 				<Typist.Backspace count={30} />
 				<h2>Promo Code</h2>
-				
-			  
 				</Typist>
-				
 				</div>
-				<h3>
-</h3>
-
-				<h4>*T&C apply</h4>
+			
 			</div>
         );
     }

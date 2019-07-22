@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Itembanner from "../../components/itembanner/itemBanner";
 import Products from '../../assets/config/products.json';
 import OfferBanner from '../../components/offerbanner/offerbanner'
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
@@ -31,8 +32,9 @@ export default class Home extends Component {
         products={this.state.products}
       />
     ));
-    return <div>
+    return <div class="Home">
     <OfferBanner />
-    {itemBanner}</div>;
+    {itemBanner} 
+    </div>;
   }
 }

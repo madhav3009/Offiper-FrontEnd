@@ -19,21 +19,29 @@ const Item = props => {
         
         </NavLink>
           
-          <button id="Addbucket">Add To Bucket</button>
           
-          <button id="Addcart">Add To Cart</button>
      
-
-      <button id="Addbucket">Add To Bucket</button>
-      <button id="Addcart">Add To Cart</button>
 
       <div className="item-detail">
         <h4>{props.title}</h4>
         <h4 id="Price">
           {props.price} &nbsp; <strike>Rs 1000</strike>
           <br />
-        </h4>
+        </h4>        
+        
+<div class="rating">
+        
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+
+        </div>
+        <button id="Addbucket">Add To Bucket</button>
+          <button id="Addcart">Add To Cart</button>
       </div>
+      
     </div>
   );
 };

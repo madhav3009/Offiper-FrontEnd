@@ -10,7 +10,7 @@ const Login = props => {
   return (
     <div class="login">
       <div>
-        <div class="d-flex justify-content-center ">
+        <div >
           <GoogleLogin
             clientId="96873623669-4qtau9vk30798fhijoo9rc44odb8j0un.apps.googleusercontent.com"
             onSuccess={responseGoogle}

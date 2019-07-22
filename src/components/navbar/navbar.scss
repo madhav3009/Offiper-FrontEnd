@@ -6,6 +6,16 @@ background-color: transparent;border:0px;color:white;cursor:pointer;outline:0px;
   border-radius: 0px !important;
   #per{color:#ff8888;
   }
+  .fa-shopping-cart,.fa-search:before{
+    
+    color:white;
+    font-size:1.3em;
+}
+
+
+  #cartCollapse{right:12vh;top:3%;position:absolute; position:fixed;z-index:-1;}
+  #searchCollapse{right:18vh;top:3%;position:absolute; position:fixed;z-index:-1}
+
 .nav-link:hover{
   transform: scale(1.2);transition:transform 0.1s ;
   }
@@ -21,6 +31,8 @@ background-color: transparent;border:0px;color:white;cursor:pointer;outline:0px;
   font-family: 'Montserrat', sans-serif;;
  
 }
+
+
 .navbar,
 .bg-dark {
   background-color: black !important;
@@ -62,9 +74,9 @@ background-color: transparent;border:0px;color:white;cursor:pointer;outline:0px;
 
 @media only screen and (max-width: 1200px) {
 
-
+  #cartCollapse,#searchCollapse{opacity:1;}
+    
   .navbar-nav {
-
     li:first-child {
       padding-left: 0px;
     }

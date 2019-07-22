@@ -35,6 +35,26 @@ const Navbar = props => {
         <NavLink to="/" exact className="navbar-brand">
           Offi<span id="per">per</span>
         </NavLink>
+        <NavLink
+                to="/cart"
+                exact
+                activeClassName="activeNavColor"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
+                <i id="cartCollapse" class="fa fa-shopping-cart" />
+              </NavLink>
+
+              <NavLink
+                to="/search"
+                exact
+                activeClassName="activeNavColor"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+              >
+                <i id="searchCollapse"class="fa fa-search " />
+                </NavLink>    
+           
         <button
           class="navbar-toggler"
           type="button"

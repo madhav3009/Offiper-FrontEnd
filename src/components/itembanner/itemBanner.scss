@@ -1,25 +1,13 @@
-#banner{width:100%;
-  height:50vh;
-background-image:linear-gradient(#FC65B6,#6F72E7);margin-bottom:2%;
-}
-
-#FirstContainer {
-  color: rgb(255, 51, 51);
-  height: auto;
-  
-  // padding:10px;
-
-}
 .TitleContainer {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top:5vh;
   display: flex;
   justify-content: center;
 }
 .TitleHeading {
-  margin-bottom: 8vh;
-  font-size: 25px;
+  margin-bottom:5vh;
 }
 
 .Items:hover{
@@ -27,42 +15,36 @@ background-image:linear-gradient(#FC65B6,#6F72E7);margin-bottom:2%;
   cursor: pointer;
  }
  
- 
-// .bar {
-//   margin-top: 15px;
-//   width: 200px;
-//   height: 2px;
-//   display: inline-block;
-//   color: black;
-//   background-color: black;
-// }
 .itemHeading {
-  font-size: 15px;
+  font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;;
   margin-right: 20px;
   margin-left: 20px;
   text-transform: capitalize;
-  margin-bottom: -10%;
+  margin-bottom: -10vh;
   font-weight: 600;
-  color:#4e4e4e;
   text-align: center;
  
 }
 
 #SecondContainer {
   color: black;
-  background-color:#EBEBEB;
   width:100%;
-  overflow-x: auto  
+  overflow-x: auto  ;
+  background-position: cover;
+  height:470px;
+  padding-bottom:-5%;
+  
 }
 
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
-  background: rgb(204, 204, 204);
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background:rgb(255, 136, 136);
+
+  
+ background-color: rgb(218, 218, 218);
   border-radius: 0px 50px 50px 0px;
   
  
@@ -70,6 +52,10 @@ background-image:linear-gradient(#FC65B6,#6F72E7);margin-bottom:2%;
 
 
 ::-webkit-scrollbar-thumb:vertical {
-  
-  background: rgb(255, 136, 136);
+ background: rgb(218, 218, 218);
+}
+
+@media screen and (max-width:550px)
+{
+#SecondContainer{height:420px;}
 }
