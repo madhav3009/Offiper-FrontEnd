@@ -16,10 +16,6 @@ const Product = props => {
 				productData=Products[index].src;
 			}
 		}
-		console.log('productdata');
-		
-		console.log(productData);
-		
 	let addToCartText = Data.cart.addToCart;
 	var showAlert = null;
   
@@ -36,7 +32,7 @@ const Product = props => {
   }
 	let addToCartOnClick = () => {
 		setAddedToCart(true);
-		const p = { title: props.match.params.handle };
+		const p = { title: props.match.params.handle,src: props.match.params.src,price: props.match.params.price, };
 		addProductToCart(p);
 	};
 

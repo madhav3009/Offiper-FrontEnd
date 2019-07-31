@@ -1,4 +1,6 @@
 
+#qtySel{margin-top:30%;}
+.close{font-size: 25px;outline:0;border:0px;margin-left:-50%;margin-right:10%;margin-top:2%;}
 .cartHead{
     h3{
         padding:0px auto;margin:2%;border-bottom:2px solid black;padding-bottom:2%;}
@@ -36,7 +38,8 @@ span{font-weight: bold;}
 
     @media screen and (max-width:650px)
     {
-       
+        .close{font-size:16px;margin-top:15%;}
+        #qtySel{margin-top:40%;}
         .bg-secondary{
            
             .pleft{
@@ -53,7 +56,8 @@ span{font-weight: bold;}
 
     @media screen and (max-width:410px)
     {
-       
+        .close{font-size:16px;margin-top:15%;}
+        #qtySel{margin-top:40%;}
         .bg-secondary{
            #itemInCartImg{padding-right:1%;}
             .pleft{

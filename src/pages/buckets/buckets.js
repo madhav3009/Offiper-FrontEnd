@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Data from '../../assets/config/setting_data.json'
 import './bucket.scss'
+import empty from "../../assets/images/empty.png"
 export default class Buckets extends Component {
  render() {
   return (
    <div>
+       <img src={empty} style={{width:"100%"}}/>
     <button type="button"
             id="bucketAdd"
             data-toggle="modal"

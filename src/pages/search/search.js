@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./search.scss";
 import * as algoliasearch from "algoliasearch";
 import Products from '../../assets/config/products.json';
-import Data from "../../assets/config/setting_data.json";
+
 
 const client = algoliasearch("SPCXLT188J", "6499f3addfc2c838d853f461f21b5c33", {
   timeout: 4000

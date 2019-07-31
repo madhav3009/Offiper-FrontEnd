@@ -4,7 +4,7 @@ import Item from "../../components/itembanner/item/item";
 import "./productList.scss";
 
 const ProductList = props => {
-  const newProducts = Products.filter(function(product) {
+  const newProducts = Products.filter((product)=> {
     return product.type === props.match.params.type;
   });
   const productList = newProducts.map(product => (
@@ -15,10 +15,8 @@ const ProductList = props => {
   return (
     <div class="productList">
       <h2>{props.match.params.type}</h2>
-
-      <div>
+    <div>
       {productList}</div>
-      
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "./footer.scss";
 const Footer = props => {
   return (
     <footer>
+      
       <div class="container-fluid">
         <img src={footerImg} style={{ width: "50%" }} />
         <img src={footerImg} style={{ width: "50%" }} />

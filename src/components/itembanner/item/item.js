@@ -1,9 +1,17 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import "./item.scss";
+import { CartContextConsumer } from "../../../context/cart.context";
 import { NavLink } from "react-router-dom";
 
 const Item = props => {
+  //How This
+  const { addProductToCart } = React.useContext(CartContextConsumer);
+  function addP() {
+    const p = { title: props.title , src:props.src  };
+    addProductToCart(p);
+  }
+
   return (
     <div className="Item">
       <div className="discount">50% OFF</div>
@@ -14,13 +22,7 @@ const Item = props => {
         exact
       >
         <img src={props.src} alt="" />
-        
-
-        
-        </NavLink>
-          
-          
-     
+   </NavLink>
 
       <div className="item-detail">
         <h4>{props.title}</h4>
@@ -29,7 +31,7 @@ const Item = props => {
           <br />
         </h4>        
         
-<div class="rating">
+        <div class="Star">
         
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
@@ -39,7 +41,7 @@ const Item = props => {
 
         </div>
         <button id="Addbucket">Add To Bucket</button>
-          <button id="Addcart">Add To Cart</button>
+        <button id="Addcart" onClick={addP}>Add To Cart</button>
       </div>
       
     </div>

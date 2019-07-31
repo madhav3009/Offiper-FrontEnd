@@ -21,10 +21,6 @@ const Navbar = props => {
 
   function openSidebar(e) {
     let option = e.target.id;
-    console.log(e.target);
-
-    console.log(option);
-
     setOpen(true);
     setOption(option);
   }
@@ -138,7 +134,7 @@ const Navbar = props => {
                 Kitchen
               </NavLink>
             </li>
-          </ul>
+         </ul>
 
           <div class="row" id="navbar-icon">
             <div className="col-xl pt-2 pb-2">

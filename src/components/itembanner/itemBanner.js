@@ -19,25 +19,14 @@ const Itembanner = props => {
   ));
 
   return (
-    
-
-    
     <div id="FirstContainer">
-     
       <div className="TitleContainer">
-        <div className="TitleHeading">
-          <h3 className="itemHeading">{props.type}</h3>
-        </div>
-        <div className="bar TitleHeading" />
-      </div>
-      <div
-        id="SecondContainer"
-        class="d-flex flex-row p-2"
-      >
-   
-        {items}
+       <div className="TitleHeading">
+       <h3 className="itemHeading">{props.type}</h3>
       </div>
     </div>
+  <div id="SecondContainer" class="d-flex flex-row p-2">{items}</div>
+</div>
     
   );
 };

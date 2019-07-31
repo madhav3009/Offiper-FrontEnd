@@ -15,7 +15,7 @@ function App() {
  
   return (
     <>
-      <Layout>
+      <Layout >
         <Switch>
           <Route path="/search" exact component={Search} />
           <Route path="/buckets" exact component={Buckets} />

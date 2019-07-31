@@ -88,6 +88,7 @@ button {
     color:white;
     
   }
+  button:active{background-color: black;}
 }
 .Item:hover button {
   opacity: 1;

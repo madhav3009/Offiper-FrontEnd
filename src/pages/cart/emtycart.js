@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import empty from  '../../assets/images/w'
+import empty from  '../../assets/images/empty'
 
 class emtycart extends Component {
     render() {
