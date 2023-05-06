@@ -15,7 +15,7 @@
     "react-instantsearch-dom": "^5.7.0",
     "react-router-dom": "^5.0.1",
     "react-router-scroll-top": "^0.2.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-typist": "^2.0.5"
   },
   "scripts": {
@@ -46,6 +46,6 @@
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9"
+    "@storybook/react": "^7.0.9"
   }
 }
